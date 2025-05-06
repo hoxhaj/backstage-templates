@@ -44,7 +44,7 @@ spec:
         allowedHosts:
           - github.com
         description: This is ${{ parameters.component_id }}
-        repoUrl: github.com?owner=hoxhaj&repo=${{parameters.component_id}}
+        repoUrl: github.com?owner=hoxhaj-org&repo=${{parameters.component_id}}
         protectDefaultBranch: false
         repoVisibility: public
 
