@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: indry/${{values.app_name}}:${{ '${{ env.COMMIT_ID }}' }}
+          tags: indry/${{values.app_name}}:${{ '${{ env.COMMIT_ID }}' }} , indry/${{values.app_name}}:${{values.app_name}}-${{values.app_env}}-latest
     outputs:
       commit_id: ${{ '${{ env.COMMIT_ID }}' }}
 
