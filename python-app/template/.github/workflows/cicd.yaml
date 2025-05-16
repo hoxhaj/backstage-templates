@@ -74,7 +74,7 @@ jobs:
             --path charts/${{values.app_name}} \
             --dest-server https://kubernetes.default.svc \
             --dest-namespace ${{values.app_env}} \
-            --values charts/${{values.app_name}}/values-${{values.app_env}}.yaml \
+            --values values-${{values.app_env}}.yaml \
             --revision master \
             --sync-policy manual \
             --sync-option CreateNamespace=true
